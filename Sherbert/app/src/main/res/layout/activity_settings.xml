@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/colorLoginBack"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/logowhite"
+                />
+
+            <ImageView
+                android:id="@+id/opensettings"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="left"
+                app:srcCompat="@drawable/whitehome"
+                android:clickable="true"
+                android:onClick="gohome"
+                />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="nickvenis.sherbert.settings"
+            tools:layout_editor_absoluteY="25dp"
+            tools:layout_editor_absoluteX="0dp">
+
+            <LinearLayout
+                android:layout_width="395dp"
+                android:layout_height="587dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <TextView
+                    android:id="@+id/loginLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="20dp"
+                    android:text="@string/loggedin" />
+
+                <TextView
+                    android:id="@+id/userstat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="@string/user"
+                    android:textSize="30dp" />
+
+                <Button
+                    android:id="@+id/signout"
+                    android:layout_width="100dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:onClick="signout"
+                    android:text="@string/signout" />
+            </LinearLayout>
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

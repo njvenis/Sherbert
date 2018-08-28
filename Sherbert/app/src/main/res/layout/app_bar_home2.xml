@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nickvenis.sherbert.home2">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorLoginBack"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/logowhite" />
+
+        <ImageView
+            android:id="@+id/opensettings"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/cog"
+            android:paddingEnd="15dp"
+           />
+
+    </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+
+    <include layout="@layout/content_home2" />
+
+</android.support.design.widget.CoordinatorLayout>

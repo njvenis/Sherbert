@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="nickvenis.sherbert.home2"
+    tools:showIn="@layout/activity_home2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp">
+
+        <ImageView
+            android:id="@+id/profile2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/avatar" />
+
+        <TextView
+            android:id="@+id/user2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:text="@string/user"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/welcomemessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/welcome"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/stats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="40dp"
+            android:text="@string/stats"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/benchclick"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingTop="20dp">
+
+            <ImageView
+                android:id="@+id/benchpng"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/benchpress" />
+
+            <TextView
+                android:id="@+id/benchlabel"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/bench"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/benchkglabel"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/weight"
+                android:textSize="28dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/squatclick"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="opensquat"
+            android:orientation="horizontal"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:id="@+id/squatpng"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/squat" />
+
+            <TextView
+                android:id="@+id/squatlabel"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/squat"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/squatkg"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/weight"
+                android:textSize="28dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/candjlin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:id="@+id/ohppng"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ohp" />
+
+            <TextView
+                android:id="@+id/overheadpresslabel"
+                android:layout_width="0dp"
+                android:layout_height="58dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/ohp"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/candjkg"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/weight"
+                android:textSize="28dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dllin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:id="@+id/deadliftpng"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/deadlift" />
+
+            <TextView
+                android:id="@+id/deadliftlabel"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/deadlift"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/deadliftkg"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/weight"
+                android:textSize="28dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</android.support.v4.widget.NestedScrollView>
+

@@ -1,0 +1,79 @@
+{
+  "project_info": {
+    "project_number": "495364048695",
+    "project_id": "firebase-sherbert"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:495364048695:android:d7f65fe2b6d36d11",
+        "android_client_info": {
+          "package_name": "njvenis.sherbert"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "495364048695-06ojalaq03uuhfjr9o50bdr95o7ukhc5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLbJ4BjzaspyaQO5e5h5jxVKWmr0eqAzg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:495364048695:android:005838c0c25e384d",
+        "android_client_info": {
+          "package_name": "nickvenis.sherbert"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "495364048695-06ojalaq03uuhfjr9o50bdr95o7ukhc5.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "495364048695-3uq93ctu2pqhpcs0mj3gin7edroihtit.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "nickvenis.sherbert",
+            "certificate_hash": "510ec04f8251c215ec9b321b0d87c2914ba79a0a"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLbJ4BjzaspyaQO5e5h5jxVKWmr0eqAzg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

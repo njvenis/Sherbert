@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/homemenu"
+            android:title="home"
+            android:icon="@drawable/home"/>
+        <item
+            android:id="@+id/findgymmenu"
+            android:title="Find a gym"
+            android:icon="@drawable/glass"/>
+        <item
+            android:id="@+id/benchmenu"
+            android:title="Bench"
+            android:icon="@drawable/benchpress"/>
+        <item
+            android:id="@+id/squatmenu"
+            android:title="Squat"
+            android:icon="@drawable/squat"/>
+        <item
+            android:id="@+id/cleanmenu"
+            android:title="Clean &amp; Jerk"
+            android:icon="@drawable/ohp"/>
+        <item
+            android:id="@+id/deadliftmenu"
+            android:title="Deadlift"
+            android:icon="@drawable/deadlift"/>
+
+        <item
+            android:id="@+id/settingsmenu"
+            android:icon="@drawable/cogblack"
+            android:title="Settings" />
+    </group>
+</menu>
